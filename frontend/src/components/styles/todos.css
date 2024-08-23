@@ -1,0 +1,117 @@
+/* Todos styles */
+.todos-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todo-form {
+    margin-bottom: 20px;
+  }
+  
+  .todo-form input, .todo-form textarea {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .todo-form button {
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .todo-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .todo-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+  
+  .todo-item h3 {
+    margin: 0;
+  }
+  
+  .todo-item p {
+    margin: 5px 0;
+  }
+  
+  .todo-item button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .todo-item button:hover {
+    background-color: #c82333;
+  }
+  
+
+  .todo-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .todo-table th,
+  .todo-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .todo-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .todo-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .todo-table tr:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .todo-table button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .todo-table button:hover {
+    opacity: 0.8;
+  }
+  
+  .todo-table .edit-button {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .todo-table .delete-button {
+    background-color: #f44336;
+    color: white;
+  }
+  
