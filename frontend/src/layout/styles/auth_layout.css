@@ -1,0 +1,26 @@
+/* AuthLayout.css */
+
+/* Ensure the layout takes the full viewport height and has a white background */
+.auth-layout {
+    height: 100vh;
+    background-color: #ffffff; /* White background */
+  }
+  
+  /* Styling for the header section with a gray background and padding */
+  .auth-layout-header {
+    display: flex;
+    gap: 0.5rem; /* 2 units of spacing (Tailwind's `gap-2`) */
+    padding: 0.75rem 1rem; /* 3 units of vertical padding and 4 units of horizontal padding (Tailwind's `py-3` and `px-4`) */
+    background-color: #f3f4f6; /* Gray background (Tailwind's `bg-gray-200`) */
+  }
+  
+  /* Styling for links within the header section */
+  .auth-layout-header a {
+    text-decoration: none; /* Remove underline from links */
+    color: #1f2937; /* Tailwind's text-gray-800 color */
+  }
+  
+  .auth-layout-header a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  

@@ -14,11 +14,11 @@ const Todos = () => {
 
   const fetchTodos = async () => {
     try {
-      const token = localStorage.getItem('access_token');
+      const token = localStorage.getItem('token');
       const response = await axios.get('http://0.0.0.0:9000/todos', {
         headers: { 'Authorization': `${token}` },
       });
-      if(response.status == 403){
+      if(response.status === 403){
         // Todo: Handle Logout
         console.log("Access token not valid")
       }
@@ -30,7 +30,7 @@ const Todos = () => {
 
   const handleCreateTodo = async () => {
     try {
-      const token = localStorage.getItem('access_token');
+      const token = localStorage.getItem('token');
       await axios.post('http://0.0.0.0:9000/todos', newTodo, {
         headers: { 'Authorization': `${token}` },
       });
@@ -44,7 +44,7 @@ const Todos = () => {
 
   const handleUpdateTodo = async () => {
     try {
-      const token = localStorage.getItem('access_token');
+      const token = localStorage.getItem('token');
       await axios.put(`http://0.0.0.0:9000/todos/${editTodo.id}`, editTodo, {
         headers: { 'Authorization': `${token}` },
       });
@@ -58,7 +58,7 @@ const Todos = () => {
 
   const handleDeleteTodo = async (id) => {
     try {
-      const token = localStorage.getItem('access_token');
+      const token = localStorage.getItem('token');
       await axios.delete(`http://0.0.0.0:9000/todos/${id}`, {
         headers: { 'Authorization': `${token}` },
       });
@@ -122,7 +122,7 @@ const Todos = () => {
             {todos.map((todo) => (
             <tr key={todo.id}>
                 <td>{todo.title}</td>
-                <td>{todo.description}</td>
+                <td>{todo.description.slice(0,10)}</td>
                 <td>{todo.completed ? 'Completed' : 'Incomplete'}</td>
                 <td>
                 <button onClick={() => setEditTodo(todo)}>Edit</button>

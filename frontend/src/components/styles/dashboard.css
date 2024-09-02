@@ -17,19 +17,3 @@
     font-size: 18px;
   }
   
-  .logout-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #dc3545;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .logout-button:hover {
-    background-color: #c82333;
-  }
-  

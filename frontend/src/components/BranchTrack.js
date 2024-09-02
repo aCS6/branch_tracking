@@ -15,7 +15,7 @@ const Branches = () => {
     on_hold: false
   });
   const [editBranch, setEditBranch] = useState(null);
-  const [statusFilter, setStatusFilter] = useState(null);
+  const [statusFilter, setStatusFilter] = useState('on_going');
   const [enums, setEnums] = useState({
     work_types: [],
     current_stages: [],
@@ -33,7 +33,7 @@ const Branches = () => {
 
   const fetchBranches = useCallback(async () => {
     try {
-      const token = localStorage.getItem('access_token');
+      const token = localStorage.getItem('token');
       const response = await axios.get(`http://0.0.0.0:9000/branch_track/`, {
         params: { status: statusFilter },
         headers: { 'Authorization': `${token}` },
@@ -53,7 +53,7 @@ const Branches = () => {
 
   const handleCreateBranch = async () => {
     try {
-      const token = localStorage.getItem('access_token');
+      const token = localStorage.getItem('token');
       await axios.post('http://0.0.0.0:9000/branch_track/', newBranch, {
         headers: { 'Authorization': `${token}` },
       });
@@ -78,7 +78,7 @@ const Branches = () => {
 
     try {
       console.log(editBranch)
-      const token = localStorage.getItem('access_token');
+      const token = localStorage.getItem('token');
       await axios.put(`http://0.0.0.0:9000/branch_track/${editBranch.id}`, editBranch, {
         headers: { 'Authorization': `${token}` },
       });
@@ -101,7 +101,7 @@ const Branches = () => {
 
   const handleDeleteBranch = async (id) => {
     try {
-      const token = localStorage.getItem('access_token');
+      const token = localStorage.getItem('token');
       await axios.delete(`http://0.0.0.0:9000/branch_track/${id}`, {
         headers: { 'Authorization': `${token}` },
       });

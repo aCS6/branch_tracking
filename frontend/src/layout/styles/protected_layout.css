@@ -1,0 +1,81 @@
+/* Assuming you have some base styles set up already */
+
+/* Full-height container */
+.h-screen {
+    height: 100vh;
+  }
+  
+  /* Flex container with space between items */
+  .flex {
+    display: flex;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  /* Padding and background color for the top bar */
+  .px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+  
+  .bg-gray-200 {
+    background-color: #edf2f7; /* Light gray */
+  }
+  
+  /* Flex container for navigation links */
+  .flex {
+    display: flex;
+  }
+  
+  .gap-2 {
+    gap: 0.5rem; /* 8px gap between items */
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  /* Navigation link styles */
+  .text-red-500 {
+    color: #f56565; /* Red color */
+  }
+  
+  .text-yellow-500 {
+    color: #ecc94b; /* Yellow color */
+  }
+  
+  /* Button styles */
+  .bg-red-500 {
+    background-color: #f56565; /* Red color */
+  }
+  
+  .text-white {
+    color: #ffffff; /* White color */
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  .logout-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .logout-button:hover {
+    background-color: #c82333;
+  }

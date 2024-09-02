@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.app_container {
+  display: flex;
+  gap: 0.5rem; /* 2 units of Tailwind's default spacing scale */
+  padding-left: 1rem; /* 4 units of Tailwind's default spacing scale */
+  padding-right: 1rem; /* 4 units of Tailwind's default spacing scale */
+  padding-top: 0.75rem; /* 3 units of Tailwind's default spacing scale */
+  padding-bottom: 0.75rem; /* 3 units of Tailwind's default spacing scale */
+  background-color: #e5e7eb; /* Tailwind's gray-200 */
+}
